@@ -1,0 +1,329 @@
+/* Tablets (hasta 1024px) */
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 1.5rem;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+
+    .content-grid {
+        gap: 2rem;
+    }
+
+    .content-grid p {
+        font-size: 1rem;
+    }
+}
+
+/* Tablets pequeñas (hasta 768px) */
+@media (max-width: 768px) {
+    /* Ocultar header desktop */
+    header {
+        display: none;
+    }
+
+    /* Mostrar header móvil */
+    .mobile-header {
+        display: block;
+    }
+
+    /* Mostrar botón hamburguesa */
+    .floating-menu-btn {
+        display: flex;
+    }
+
+    /* Mostrar menú lateral (se controla con JS) */
+    .mobile-menu {
+        display: block;
+    }
+
+    /* Ajustar margin del main */
+    main {
+        margin-top: 60px;
+    }
+
+    /* Hero ajustes */
+    .hero {
+        padding: 4rem 0;
+    }
+
+    .hero-logo img {
+        height: 280px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    /* Secciones */
+    section {
+        padding: 3rem 0;
+    }
+
+    section h2 {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+
+    /* Content Grid a una columna */
+    .content-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    /* Alternar orden en móviles para mejor lectura */
+    #produccion .content-grid > div:first-child {
+        order: 2;
+    }
+
+    #produccion .content-grid > div:last-child {
+        order: 1;
+    }
+
+    #moda .content-grid > div:first-child {
+        order: 1;
+    }
+
+    #moda .content-grid > div:last-child {
+        order: 2;
+    }
+
+    #digital .content-grid > div:first-child {
+        order: 2;
+    }
+
+    #digital .content-grid > div:last-child {
+        order: 1;
+    }
+
+    /* Contacto */
+    .contact-intro p {
+        font-size: 1.1rem;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .contact-card {
+        padding: 2.5rem 1.5rem;
+    }
+
+    .contact-icon {
+        width: 70px;
+        height: 70px;
+    }
+
+    .contact-icon svg {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+/* Móviles (hasta 480px) */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    .mobile-header-content h1 {
+        font-size: 1.2rem;
+    }
+
+    .floating-menu-btn {
+        width: 45px;
+        height: 45px;
+        top: 15px;
+        left: 15px;
+    }
+
+    .hamburger-lines .line {
+        width: 22px;
+    }
+
+    .mobile-menu {
+        width: 85%;
+        max-width: 280px;
+    }
+
+    main {
+        margin-top: 55px;
+    }
+
+    .hero {
+        padding: 3rem 0;
+    }
+
+    .hero-logo img {
+        height: 200px;
+    }
+
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    section {
+        padding: 2.5rem 0;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .content-grid p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    .contact-intro p {
+        font-size: 1rem;
+    }
+
+    .contact-card {
+        padding: 2rem 1.5rem;
+    }
+
+    .contact-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .contact-icon svg {
+        width: 30px;
+        height: 30px;
+    }
+
+    .contact-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .contact-card a,
+    .contact-card p {
+        font-size: 1rem;
+    }
+
+    footer {
+        padding: 1.5rem 0;
+        font-size: 0.9rem;
+    }
+}
+
+/* Móviles muy pequeños (hasta 320px) */
+@media (max-width: 320px) {
+    .mobile-header-content h1 {
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+
+    .hero h1 {
+        font-size: 1.3rem;
+    }
+
+    .hero p {
+        font-size: 0.85rem;
+    }
+
+    section h2 {
+        font-size: 1.3rem;
+    }
+
+    .content-grid p {
+        font-size: 0.9rem;
+    }
+
+    .mobile-menu {
+        width: 90%;
+    }
+}
+
+/* Landscape móvil */
+@media (max-height: 500px) and (orientation: landscape) {
+    .mobile-menu {
+        height: 100vh;
+        overflow-y: auto;
+    }
+
+    .mobile-menu-content {
+        padding: 1rem 0;
+    }
+
+    .mobile-menu-link {
+        padding: 0.8rem 2rem;
+    }
+
+    .hero {
+        padding: 2rem 0;
+    }
+
+    section {
+        padding: 2rem 0;
+    }
+}
+
+/* Animaciones para tablets y móviles */
+@media (max-width: 768px) {
+    /* Animación suave para las imágenes */
+    .content-grid img {
+        animation: fadeInUp 0.6s ease-out;
+    }
+
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Mejorar tap areas para móviles */
+    .mobile-menu-link {
+        min-height: 48px;
+        display: flex;
+        align-items: center;
+    }
+
+    .contact-grid a,
+    .contact-grid span {
+        min-height: 44px;
+        display: inline-block;
+        line-height: 44px;
+    }
+}
+
+/* Touch devices - mejorar experiencia táctil */
+@media (hover: none) and (pointer: coarse) {
+    .floating-menu-btn:active {
+        transform: scale(0.95);
+    }
+
+    .mobile-menu-link:active {
+        background: var(--light-gray);
+    }
+
+    .contact-grid div:active {
+        transform: scale(0.98);
+    }
+}
