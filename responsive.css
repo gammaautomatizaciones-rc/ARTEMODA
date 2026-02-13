@@ -49,16 +49,27 @@
 
     /* Ajustar margin del main */
     main {
-        margin-top: 60px;
+        margin-top: 0;
     }
 
     /* Hero ajustes */
     .hero {
-        padding: 4rem 0;
+        padding: 6rem 0 4rem;
+        min-height: 80vh;
+    }
+
+    .hero-content-wrapper {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .hero-text {
+        text-align: center;
     }
 
     .hero-logo img {
-        height: 280px;
+        height: 150px;
     }
 
     .hero h1 {
@@ -67,6 +78,20 @@
 
     .hero p {
         font-size: 1rem;
+    }
+
+    .hero-cta {
+        margin-top: 2rem;
+        flex-direction: column;
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
     }
 
     /* Secciones */
@@ -79,35 +104,14 @@
         margin-bottom: 2rem;
     }
 
-    /* Content Grid a una columna */
-    .content-grid {
-        grid-template-columns: 1fr;
-        gap: 2rem;
+    /* Content Wrapper responsive */
+    .content-wrapper {
+        padding: 2rem;
     }
 
-    /* Alternar orden en móviles para mejor lectura */
-    #produccion .content-grid > div:first-child {
-        order: 2;
-    }
-
-    #produccion .content-grid > div:last-child {
-        order: 1;
-    }
-
-    #moda .content-grid > div:first-child {
-        order: 1;
-    }
-
-    #moda .content-grid > div:last-child {
-        order: 2;
-    }
-
-    #digital .content-grid > div:first-child {
-        order: 2;
-    }
-
-    #digital .content-grid > div:last-child {
-        order: 1;
+    section {
+        padding: 5rem 0;
+        background-attachment: scroll;
     }
 
     /* Contacto */
@@ -118,6 +122,23 @@
     .contact-grid {
         grid-template-columns: 1fr;
         gap: 2rem;
+    }
+
+    .btn-whatsapp-contact {
+        font-size: 1.1rem;
+        padding: 1.3rem 2.5rem;
+    }
+
+    .whatsapp-float {
+        width: 60px;
+        height: 60px;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .whatsapp-float svg {
+        width: 28px;
+        height: 28px;
     }
 
     .contact-card {
@@ -162,15 +183,25 @@
     }
 
     main {
-        margin-top: 55px;
+        margin-top: 0;
     }
 
     .hero {
-        padding: 3rem 0;
+        padding: 5rem 0 3rem;
+        min-height: 70vh;
+    }
+
+    .hero-content-wrapper {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero-text {
+        text-align: center;
     }
 
     .hero-logo img {
-        height: 200px;
+        height: 120px;
     }
 
     .hero h1 {
@@ -181,18 +212,47 @@
         font-size: 0.9rem;
     }
 
+    .hero-cta {
+        justify-content: center;
+    }
+
     section {
-        padding: 2.5rem 0;
+        padding: 4rem 0;
+        background-attachment: scroll;
     }
 
     section h2 {
-        font-size: 1.5rem;
-        margin-bottom: 1.5rem;
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
     }
 
-    .content-grid p {
+    .content-wrapper {
+        padding: 1.5rem;
+    }
+
+    .content-wrapper p {
         font-size: 0.95rem;
-        line-height: 1.6;
+        line-height: 1.7;
+    }
+
+    .btn-whatsapp-contact {
+        font-size: 1rem;
+        padding: 1.2rem 2rem;
+        width: 90%;
+        max-width: 350px;
+        text-align: center;
+    }
+
+    .whatsapp-float {
+        width: 55px;
+        height: 55px;
+        bottom: 15px;
+        right: 15px;
+    }
+
+    .whatsapp-float svg {
+        width: 26px;
+        height: 26px;
     }
 
     .contact-intro p {
@@ -222,8 +282,46 @@
         font-size: 1rem;
     }
 
+    /* Casting responsive móvil */
+    .casting-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .casting-cta {
+        padding: 2rem 1.5rem;
+    }
+
+    .btn-email-casting {
+        font-size: 1rem;
+        padding: 1.2rem 2rem;
+        width: 90%;
+        max-width: 350px;
+    }
+
+    /* Casting responsive */
+    .casting-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .casting-cta {
+        padding: 2.5rem 1.5rem;
+    }
+
+    .btn-email-casting {
+        font-size: 1.1rem;
+        padding: 1.3rem 2.5rem;
+    }
+
+    /* Footer responsive */
+    .social-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
     footer {
-        padding: 1.5rem 0;
+        padding: 2rem 0 1.5rem;
         font-size: 0.9rem;
     }
 }
